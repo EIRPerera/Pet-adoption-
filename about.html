@@ -27,6 +27,93 @@
     rel="stylesheet">
 </head>
 <body>
+   <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <h1>
+        <a href="#" class="logo">PetFinder</a>
+      </h1>
+
+
+      <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+
+        <a href="#" class="logo">PetFinder</a>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="index.html" class="navbar-link" data-nav-link>
+              <span>Home</span>
+
+              <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+            </li>
+
+          <li>
+            <a href="about.html" class="navbar-link" data-nav-link>
+              <span>About</span>
+
+              <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="services.html" class="navbar-link" data-nav-link>
+              <span>Service</span>
+
+              <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="donate.html" class="navbar-link" data-nav-link>
+              <span>Donate</span>
+
+              <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="contact.html" class="navbar-link" data-nav-link>
+              <span>Contact</span>
+
+              <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <div class="header-action">
+
+       <!--<button class="search-btn" aria-label="Search">
+          <ion-icon name="search-outline"></ion-icon>
+        </button>-->
+        
+
+        <button class="btn btn-primary">
+          <span>Donation</span>
+
+          <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+      </div>
+
+    </div>
+  </header>
           <!-- 
         - #ABOUT
       -->
@@ -80,14 +167,6 @@
                 <button class="tab-btn active">Our Mission</button>
               </li>
 
-              <li>
-                <button class="tab-btn active">Our Vision</button>
-              </li>
-
-              <li>
-                <button class="tab-btn">Next Plan</button>
-              </li>
-
             </ul>
 
             <div class="tab-content">
@@ -96,41 +175,21 @@
                 Our mission is to match every pet with a loving home, providing compassionate care, support, and education to create lifelong bonds between animals and their human companions.
               </p>
 
-              <ul class="tab-list">
+              <ul class="tab-nav">
 
-                <li class="tab-item">
-                  <div class="item-icon">
-                    <ion-icon name="checkmark-circle"></ion-icon>
-                  </div>
-
-                  <p class="tab-text">Charity For Foods</p>
+                <li>
+                  <button class="tab-btn active">Our Vision</button>
                 </li>
-
-                <li class="tab-item">
-                  <div class="item-icon">
-                    <ion-icon name="checkmark-circle"></ion-icon>
-                  </div>
-
-                  <p class="tab-text">Charity For Education</p>
-                </li>
-
-                <li class="tab-item">
-                  <div class="item-icon">
-                    <ion-icon name="checkmark-circle"></ion-icon>
-                  </div>
-
-                  <p class="tab-text">Charity For Water</p>
-                </li>
-
-                <li class="tab-item">
-                  <div class="item-icon">
-                    <ion-icon name="checkmark-circle"></ion-icon>
-                  </div>
-
-                  <p class="tab-text">Charity For Medical</p>
-                </li>
-
+  
               </ul>
+  
+              <div class="tab-content">
+  
+                <p class="section-text">
+                  Our vision  is to create a world where every animal finds a loving, forever home, and every person discovers the joy of companionship through pet adoption.
+                </p>
+
+            
 
               <button class="btn btn-secondary">
                 <span>Learn More Us</span>
