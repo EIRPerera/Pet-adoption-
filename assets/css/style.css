@@ -180,7 +180,7 @@ body {
   gap: 10px;
 }
 
-.h1,
+.h1{color:black;}
 .h2 { font-weight: var(--fw-300); }
 
 .h2,
@@ -415,6 +415,7 @@ body {
   letter-spacing: -1px;
   max-width: 50ch;
   margin-block-end: 30px;
+  color:black;
 }
 
 
@@ -582,7 +583,7 @@ body {
   background-color: var(--baby-powder);
   background-repeat: no-repeat;
   background-position: center top;
-  margin-block-start: -200px;
+  margin-block-start: -50px;
   padding-block-start: 200px;
 }
 
@@ -639,19 +640,19 @@ body {
 
 
 /*-----------------------------------*\
-  #DONATE
+  #pets
 \*-----------------------------------*/
 
-.donate-list {
+.pets-list {
   display: grid;
   gap: 60px;
 }
 
-.donate-card { box-shadow: var(--card-shadow); }
+.pets-card { box-shadow: var(--card-shadow); }
 
-.donate-card .card-banner { background-color: var(--light-gray); }
+.pets-card .card-banner { background-color: var(--light-gray); }
 
-.donate-card .card-content {
+.pets-card .card-content {
   background-color: var(--white);
   padding: 35px;
 }
@@ -673,7 +674,7 @@ body {
   font-weight: var(--fw-600);
 }
 
-.donate-card .card-title { --fs-5: 2.1rem; }
+.pets-card .card-title { --fs-5: 2.1rem; }
 
 .progress-box {
   background-color: var(--cultured);
@@ -703,12 +704,12 @@ body {
   margin-block: 15px;
 }
 
-.donate-card .card-wrapper-text {
+.pets-card .card-wrapper-text {
   display: flex;
   gap: 5px;
 }
 
-.donate-card .card-wrapper-text span {
+.pets-card .card-wrapper-text span {
   color: var(--sonic-silver);
   font-weight: var(--fw-500);
 }
@@ -862,6 +863,8 @@ body {
   position: relative;
   background-color: var(--eerie-black-1);
   overflow: hidden;
+  padding-top: 120px;
+  
 }
 
 .insta-post-link > img { transition: var(--transition-2); }
@@ -895,6 +898,61 @@ body {
 .insta-post-item {
   min-width: 90%;
   scroll-snap-align: center;
+}
+/*new*/
+/* Contact Page Styles */
+.contact {
+  display: flex;
+  flex-wrap: wrap; /* Allow form and info section to fit side-by-side on larger screens */
+  justify-content: space-between; /* Space form and info section with some gap */
+  padding: 20px;
+}
+
+.contact form {
+  width: 60%; /* Adjust width as needed for layout */
+  margin-bottom: 30px;
+}
+
+.contact form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact form input, .contact form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.contact form button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact form button:hover {
+  background-color: #0069d9;
+}
+
+.contact-info {
+  width: 30%; /* Adjust width as needed for layout */
+  padding: 10px;
+  border-radius: 5px;
+  background-color: hsl(86, 45%, 54%);;
+  
+}
+
+.contact-info h3 {
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  margin-bottom: 5px;
 }
 
 
@@ -1014,16 +1072,16 @@ body {
 
 
   /**
-   * DONATE
+   * pets
    */
 
-  .donate-card {
+  .pets-card {
     position: relative;
     padding-block-end: 150px;
     box-shadow: none;
   }
 
-  .donate-card .card-content {
+  .pets-card .card-content {
     position: absolute;
     width: 85%;
     bottom: 0;
@@ -1032,7 +1090,7 @@ body {
     box-shadow: var(--card-shadow);
   }
 
-  .donate-card .card-title { --fs-5: 2.4rem; }
+  .pets-card .card-title { --fs-5: 2.4rem; }
 
 
 
@@ -1265,10 +1323,10 @@ body {
 
 
   /**
-   * DONATE
+   * pets
    */
 
-  .donate-list {
+  .pets-list {
     grid-template-columns: 1fr 1fr;
     column-gap: 30px;
   }
@@ -1432,12 +1490,12 @@ body {
 
 
   /**
-   * DONATE
+   * pets
    */
 
-  .donate-card { padding-inline-end: 120px; }
+  .pets-card { padding-inline-end: 120px; }
 
-  .donate-card .card-content { width: 65%; }
+  .pets-card .card-content { width: 50%; }
 
 
 

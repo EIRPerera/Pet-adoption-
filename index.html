@@ -1,270 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PetFinder - Find Your New Best Friend</title>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetFinder - Find Your New Best Friend</title>
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto:wght@300;400;500;700&family=Oswald:wght@600&display=swap" rel="stylesheet">
+  </head>
 
-  <!-- 
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <body>
 
-  <!-- 
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+    <header class="header" data-header>
+      <div class="container">
+        <h1>
+          <a href="#" class="logo">PetFinder</a>
+        </h1>
 
-  <!-- 
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto:wght@300;400;500;700&family=Oswald:wght@600&display=swap"
-    rel="stylesheet">
-</head>
-
-<body>
-
-  <!-- 
-    - #HEADER
-  -->
-
-  <header class="header" data-header>
-    <div class="container">
-
-      <h1>
-        <a href="#" class="logo">PetFinder</a>
-      </h1>
-
-
-      <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
-        <ion-icon name="menu-outline"></ion-icon>
-      </button>
-
-      <nav class="navbar" data-navbar>
-
-        <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
-          <ion-icon name="close-outline"></ion-icon>
+        <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+          <ion-icon name="menu-outline"></ion-icon>
         </button>
 
-        <a href="#" class="logo">PetFinder</a>
+        <nav class="navbar" data-navbar>
 
-        <ul class="navbar-list">
+          <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
 
-          <li>
-            <a href="index.html" class="navbar-link" data-nav-link>
-              <span>Home</span>
+          <a href="#" class="logo">PetFinder</a>
 
-              <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
-            </a>
+          <ul class="navbar-list">
+
+            <li>
+              <a href="index.html" class="navbar-link" data-nav-link>
+                <span>Home</span>
+                <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+              </a>
             </li>
 
-          <li>
-            <a href="about.html" class="navbar-link" data-nav-link>
-              <span>About</span>
+            <li>
+              <a href="about.html" class="navbar-link" data-nav-link>
+               <span>About</span>
+                <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+              </a>
+            </li>
 
-              <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
-            </a>
-          </li>
+            <li>
+              <a href="services.html" class="navbar-link" data-nav-link>
+               <span>Service</span>
+                <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+             </a>
+           </li>
 
-          <li>
-            <a href="services.html" class="navbar-link" data-nav-link>
-              <span>Service</span>
+           <li>
+             <a href="pets.html" class="navbar-link" data-nav-link>
+                <span>Find a Pet</span>
+                <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+              </a>
+            </li>
 
-              <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
-            </a>
-          </li>
+            <li>
+             <a href="contact.html" class="navbar-link" data-nav-link>
+               <span>Contact</span>
+                <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+              </a>
+           </li>
 
-          <li>
-            <a href="donate.html" class="navbar-link" data-nav-link>
-              <span>Donate</span>
+          </ul>
 
-              <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
-            </a>
-          </li>
+        </nav>
 
-          <li>
-            <a href="contact.html" class="navbar-link" data-nav-link>
-              <span>Contact</span>
-
-              <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
-
-      </nav>
-
-      <div class="header-action">
-
-       <!--<button class="search-btn" aria-label="Search">
-          <ion-icon name="search-outline"></ion-icon>
-        </button>-->
-        
-
-        <button class="btn btn-primary">
-          <span>Donation</span>
-
-          <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
-        </button>
-
-      </div>
-
-    </div>
-  </header>
-
-
-
-
-
-  <main>
-    <article>
-
-      <!-- 
-        - #HERO
-      -->
-
-      <section class="hero" id="home">
-        <div class="container">
-
-          <p class="section-subtitle">
-            <img src="./assets/images/subtitle-img-green.png" width="32" height="7" alt="Wavy line">
-
-            <span>Welcome to PetFinder</span>
-          </p>
-
-          <h2 class="h1 hero-title">
-            SAVE A LIFE <strong>ADOPT A PET</strong>
-          </h2>
-
-          <p class="hero-text">
-            Together, we've helped save more than 10 million pets through adoption. Join us to keep the momentum going during PetFinder Charities National Adoption Week events at your local PetFinder store.
-          </p>
-
-          <!--<button class="btn btn-primary">
+       <div class="header-action">
+         <button class="btn btn-primary">
             <span>Donation</span>
-
             <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
-          </button>-->
+          </button>
 
         </div>
-      </section>
 
+      </div>
+    </header>
 
+    <main>
+      <article>
 
+        <section class="hero" id="home">
+          <div class="container">
 
+            <p class="section-subtitle">
+              <img src="./assets/images/subtitle-img-green.png" width="32" height="7" alt="Wavy line">
+              <span>Welcome to PetFinder</span>
+           </p>
 
-      <!-- 
-        - #FEATURES
-      -->
+            <h2 class="h1 hero-title">
+              SAVE A LIFE <strong>ADOPT A PET</strong>
+           </h2>
 
-      <section class="section features">
+            <p class="hero-text">
+              Together, we've helped save more than 10 million pets through adoption. Join us to keep the momentum going during PetFinder Charities National Adoption Week events at your local PetFinder store.
+            </p>
+
+          </div>
+       </section>
+
+        <section class="section features">
+          <div class="container">
+
+           <ul class="features-list">
+
+              <li class="features-item">
+               <div class="item-icon">
+                  <ion-icon name="car-outline"></ion-icon>
+               </div>
+
+               <div>
+                  <h3 class="h4 item-title">Door-to-Door <br>Pet Transportation</h3>
+                  <p class="item-text">
+                    Wherever you are in the Sri Lanka, if you need to transport your pet, we can do that. 
+                 </p>
+                </div>
+              </li>
+
+              <li class="features-item">
+               <div class="item-icon">
+                  <ion-icon name="flower-outline"></ion-icon>
+               </div>
+
+                <div>
+                 <h3 class="h4 item-title">One Stop <br> Pet Travel Agent</h3>
+                 <p class="item-text">
+                    We offer blood tests, pet boarding, IATA pet travel boxes, health certificates.
+                 </p>
+                </div>
+              </li>
+
+              <li class="features-item">
+                <div class="item-icon">
+                 <ion-icon name="medical-outline"></ion-icon>
+                </div>
+
+                <div>
+                  <h3 class="h4 item-title">Veterinary <br> Supplies</h3>
+                  <p class="item-text">
+                   Our all veterinary supplies are according to the ISO standard
+                 </p>
+               </div>
+              </li>
+
+              <li class="features-item">
+                <div class="item-icon">
+                  <ion-icon name="star-outline"></ion-icon>
+               </div>
+
+                <div>
+                  <h3 class="h4 item-title">Licensed <br> Pet Travel Company</h3>
+                  <p class="item-text">
+                    We are active members of the IPATA & PAN. 
+                  </p>
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+        </section>
+      </article>
+    </main>
+
+      <footer class="footer">
         <div class="container">
 
-          <ul class="features-list">
+         <ul class="footer-list">
 
-            <li class="features-item">
-              <div class="item-icon">
-                <ion-icon name="car-outline"></ion-icon>
-              </div>
+           <li>
+              <a href="#" class="footer-link">Terms of use</a>
+           </li>
 
-              <div>
-                <h3 class="h4 item-title">Door-to-Door <br>Pet Transportation</h3>
-
-                <p class="item-text">
-                  Wherever you are in the Sri Lanka, if you need to transport your pet, we can do that. 
-                </p>
-              </div>
-            </li>
-
-            <li class="features-item">
-              <div class="item-icon">
-                <ion-icon name="flower-outline"></ion-icon>
-              </div>
-
-              <div>
-                <h3 class="h4 item-title">One Stop <br> Pet Travel Agent</h3>
-
-                <p class="item-text">
-                 We offer blood tests, pet boarding, IATA pet travel boxes, health certificates, <!--customs & quarantine clearances.-->
-                </p>
-              </div>
-            </li>
-
-            <li class="features-item">
-              <div class="item-icon">
-                <ion-icon name="medical-outline"></ion-icon>
-              </div>
-
-              <div>
-                <h3 class="h4 item-title">Veterinary <br> Supplies</h3>
-
-                <p class="item-text">
-                  Our all veterinary supplies are according to the ISO standard
-                </p>
-              </div>
-            </li>
-
-            <li class="features-item">
-              <div class="item-icon">
-                <ion-icon name="star-outline"></ion-icon>
-              </div>
-
-              <div>
-                <h3 class="h4 item-title">Licensed <br> Pet Travel Company</h3>
-
-                <p class="item-text">
-                  We are active members of the <!--‘International Pet & Animal Transport Association’--> (IPATA) & <!--‘Pet Alliance Network’--> (PAN). 
-                </p>
-              </div>
+            <li>
+              <a href="#" class="footer-link">Privacy & Policy</a>
             </li>
 
           </ul>
 
+          <p class="copyright">
+            Copyright 2024<a href="#" class="copyright-link">PetFinder</a>. All Rights Reserved.
+          </p>
+
         </div>
-      </section>
+      </footer>
 
-  <!-- 
-    - #FOOTER
-  -->
+      <script src="./assets/js/script.js"></script>
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-  <footer class="footer">
-    <div class="container">
-
-      <ul class="footer-list">
-
-        <li>
-          <a href="#" class="footer-link">Terms of use</a>
-        </li>
-
-        <li>
-          <a href="#" class="footer-link">Privacy & Policy</a>
-        </li>
-
-      </ul>
-
-      <p class="copyright">
-        Copyright 2024<a href="#" class="copyright-link">PetFinder</a>. All Rights Reserved.
-      </p>
-
-    </div>
-  </footer>
-
-  <!-- 
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
-
-  <!-- 
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-</body>
+  </body>
 
 </html>
