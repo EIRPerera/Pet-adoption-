@@ -76,13 +76,6 @@
 
         </nav>
 
-        <div class="header-action">
-          <a href="donation.html" class="btn btn-primary">
-            <span>Donation</span>
-            <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
-          </a>
-        </div>
-
       </div>
     </header>
 
@@ -101,18 +94,20 @@
 
               <div class="card-content">
                 <h3 class="h3 card-title">Bobby</h3>
-                <!--<p>BREED: DOMESTIC SHORT HAIR<br>
-                  AGE: 5 MONTHS<br>
-                  GENDER: MALE<br>
-                  DESEXED: YES<br>
-                  WORMED: YES<br>
-                  VACCINATED: YES
-                </p>-->
-                  
-                <button class="btn btn-secondary">
-                  <span>Free</span>
-                </button>
-
+                <button id="openBtn">Free</button>
+                <div class="popup" id="popup">
+                  <span class="popup-close" onclick="closePopup()">&times;</span>
+                  <p>NAME: Bobby<br>
+                    BREED: DOMESTIC SHORT HAIR<br>
+                    AGE: 5 MONTHS<br>
+                    GENDER: MALE<br>
+                    DESEXED: YES<br>
+                    WORMED: YES<br>
+                    VACCINATED: YES<br>
+                    To adopt bobby come to please contact us!
+                  </p>
+                </div>
+                <div class="overlay" id="overlay" onclick="closePopup()"></div>
               </div>
 
             </div>
@@ -125,24 +120,23 @@
                 <img src="./assets/images/pets-2.jpg" width="520" height="325" loading="lazy" alt="dog" class="img-cover">
               </figure>
 
-              <div class="card-content">
-                
+              <div class="card-content">     
                 <h3 class="h3 card-title">Jenny</h3>
-                <!--<p>BREED: CAVOODLE<br>
-                  AGE: 8 WEEKS<br>
-                  GENDER: MALE<br>
-                  DESEXED: YES<br>
-                  WORMED: YES<br>
-                  VACCINATED: YES
-                </p>-->
-
-                <button class="btn btn-secondary">
-                  <span>Free</span>
-                </button>
-
-              </div>
-                
-
+                <button id="openBtn">Free</button>
+                <div class="popup" id="popup">
+                  <span class="popup-close" onclick="closePopup()">&times;</span>
+                  <p>NAME: Jenny<br>
+                    BREED: CAVOODLE<br>
+                    AGE: 8 WEEKS<br>
+                    GENDER: MALE<br>
+                    DESEXED: YES<br>
+                    WORMED: YES<br>
+                    VACCINATED: YES <br>
+                    To adopt Jenny come to please contact us!
+                  </p>
+                </div>
+                <div class="overlay" id="overlay" onclick="closePopup()"></div>
+              </div>                
             </div>
           </li>
 

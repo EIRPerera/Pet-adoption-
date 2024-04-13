@@ -45,3 +45,19 @@ window.addEventListener("scroll", function () {
     : header.classList.remove("active");
 });
 
+// Get popup and overlay elements
+var popup = document.getElementById('popup');
+var overlay = document.getElementById('overlay');
+
+// Function to open popup
+document.getElementById('openBtn').addEventListener('click', function() {
+    popup.style.display = 'block';
+    overlay.style.display = 'block';
+});
+
+// Function to close popup
+function closePopup() {
+    popup.style.display = 'none';
+    overlay.style.display = 'none';
+}
+
