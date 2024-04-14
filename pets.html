@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PetFinder - Find Your New Best Friend</title>
-
+    <title>PETFINDER - Find Your New Best Friend</title>
     <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,22 +17,16 @@
 
     <header class="header" data-header>
       <div class="container">
-
         <h1>
-          <a href="#" class="logo">PetFinder</a>
+          <a href="#" class="logo">PETFINDER</a>
         </h1>
 
-        <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
-          <ion-icon name="menu-outline"></ion-icon>
-        </button>
-
+        
         <nav class="navbar" data-navbar>
 
-          <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
-            <ion-icon name="close-outline"></ion-icon>
-          </button>
+          
 
-          <a href="#" class="logo">PetFinder</a>
+          <a href="#" class="logo">PETFINDER</a>
 
           <ul class="navbar-list">
 
@@ -46,33 +39,38 @@
 
             <li>
               <a href="about.html" class="navbar-link" data-nav-link>
-                <span>About</span>
+               <span>About</span>
                 <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
               </a>
             </li>
 
             <li>
               <a href="services.html" class="navbar-link" data-nav-link>
-                <span>Service</span>
+               <span>Service</span>
                 <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
-              </a>
-            </li>
+             </a>
+           </li>
 
-            <li>
-              <a href="pets.html" class="navbar-link" data-nav-link>
+           <li>
+             <a href="pets.html" class="navbar-link" data-nav-link>
                 <span>Pets</span>
                 <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
               </a>
             </li>
 
             <li>
-              <a href="contact.html" class="navbar-link" data-nav-link>
-                <span>Contact</span>
+             <a href="contact.html" class="navbar-link" data-nav-link>
+               <span>Contact</span>
                 <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
               </a>
-            </li>
-
+           </li>
+           
           </ul>
+          <ul class="navbar-logo">
+            <li>
+              <img src="./assets/images/logo.png" alt="" left="50%" >
+            </li>
+         </ul>
 
         </nav>
 
@@ -93,23 +91,19 @@
               </figure>
 
               <div class="card-content">
-                <h3 class="h3 card-title">Bobby</h3>
-                <button id="openBtn">Free</button>
-                <div class="popup" id="popup">
-                  <span class="popup-close" onclick="closePopup()">&times;</span>
-                  <p>NAME: Bobby<br>
-                    BREED: DOMESTIC SHORT HAIR<br>
-                    AGE: 5 MONTHS<br>
-                    GENDER: MALE<br>
-                    DESEXED: YES<br>
-                    WORMED: YES<br>
-                    VACCINATED: YES<br>
-                    To adopt bobby come to please contact us!
-                  </p>
-                </div>
-                <div class="overlay" id="overlay" onclick="closePopup()"></div>
+                <h3 class="h3 card-title">Bobby</h3>                
+                <p>
+                  BREED: DOMESTIC SHORT HAIR<br>
+                  AGE: 5 MONTHS<br>
+                  GENDER: MALE<br>
+                  DESEXED: YES<br>
+                  WORMED: YES<br>
+                  VACCINATED: YES<br>
+                </p>
+                <a href="contact.html" class="btn btn-secondary" >
+                  <p>For the adoption contact us</p>
+                </a>
               </div>
-
             </div>
           </li>
 
@@ -121,21 +115,18 @@
               </figure>
 
               <div class="card-content">     
-                <h3 class="h3 card-title">Jenny</h3>
-                <button id="openBtn">Free</button>
-                <div class="popup" id="popup">
-                  <span class="popup-close" onclick="closePopup()">&times;</span>
-                  <p>NAME: Jenny<br>
-                    BREED: CAVOODLE<br>
-                    AGE: 8 WEEKS<br>
-                    GENDER: MALE<br>
-                    DESEXED: YES<br>
-                    WORMED: YES<br>
-                    VACCINATED: YES <br>
-                    To adopt Jenny come to please contact us!
-                  </p>
-                </div>
-                <div class="overlay" id="overlay" onclick="closePopup()"></div>
+                <h3 class="h3 card-title">Jenny</h3>               
+                <p>
+                  BREED: CAVOODLE<br>
+                  AGE: 8 WEEKS<br>
+                  GENDER: MALE<br>
+                  DESEXED: YES<br>
+                  WORMED: YES<br>
+                  VACCINATED: YES <br>
+                </p>
+                <a href="contact.html" class="btn btn-secondary" >
+                  <p>For the adoption contact us</p>
+                </a>                              
               </div>                
             </div>
           </li>
@@ -151,17 +142,17 @@
               <div class="card-content">
                 
                 <h3 class="h3 card-title">Tufy</h3>
-                <!--<p>BREED: CAVOODLE<br>
+                <p>BREED: CAVOODLE<br>
                   AGE: 10 WEEKS<br>
                   GENDER: FEMALE<br>
                   DESEXED: YES<br>
                   WORMED: YES<br>
                   VACCINATED: YES
-                </p>-->
+                </p>
 
-                <button class="btn btn-secondary">
-                  <span>Free</span>
-                </button>
+                <a href="contact.html" class="btn btn-secondary" >
+                  <p>For the adoption contact us</p>
+                </a>
 
               </div>
             </div>
@@ -171,24 +162,24 @@
             <div class="pets-card">
 
               <figure class="card-banner">
-                <img src="./assets/images/pets-4.jpeg" width="520" height="325" loading="lazy" alt="Elephant"
+                <img src="./assets/images/pets-4.jpg" width="520" height="325" loading="lazy" alt="Elephant"
                   class="img-cover">
               </figure>
 
               <div class="card-content">
                 
                 <h3 class="h3 card-title">Cassie</h3>
-               <!--<p>BREED: DOMESTIC SHORT HAIR<br>
+               <p>BREED: DOMESTIC SHORT HAIR<br>
                   AGE: 8 WEEKS<br>
                   GENDER: MALE<br>
                   DESEXED: YES<br>
                   WORMED: YES<br>
                   VACCINATED: YES
-                </p>-->
+                </p>
 
-                <button class="btn btn-secondary">
-                  <span>Free</span>
-                </button>
+                <a href="contact.html" class="btn btn-secondary" >
+                  <p>For the adoption contact us</p>
+                </a>
 
               </div>
             </div>
@@ -286,7 +277,7 @@
         </ul>
 
         <p class="copyright">
-          Copyright 2022 <a href="#" class="copyright-link">PetFinder</a>. All Rights Reserved.
+          Copyright 2022 <a href="#" class="copyright-link">PETFINDER</a>. All Rights Reserved.
         </p>
 
       </div>

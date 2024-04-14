@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PetFinder - Find Your New Best Friend</title>
-
+    <title>PETFINDER - Find Your New Best Friend</title>
     <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,9 +17,8 @@
 
     <header class="header" data-header>
       <div class="container">
-
         <h1>
-          <a href="#" class="logo">PetFinder</a>
+          <a href="#" class="logo">PETFINDER</a>
         </h1>
 
         <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
@@ -33,7 +31,7 @@
             <ion-icon name="close-outline"></ion-icon>
           </button>
 
-          <a href="#" class="logo">PetFinder</a>
+          <a href="#" class="logo">PETFINDER</a>
 
           <ul class="navbar-list">
 
@@ -46,39 +44,40 @@
 
             <li>
               <a href="about.html" class="navbar-link" data-nav-link>
-                <span>About</span>
+               <span>About</span>
                 <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
               </a>
             </li>
 
             <li>
               <a href="services.html" class="navbar-link" data-nav-link>
-                <span>Service</span>
+               <span>Service</span>
                 <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
-              </a>
-            </li>
+             </a>
+           </li>
 
-            <li>
-              <a href="pets.html" class="navbar-link" data-nav-link>
+           <li>
+             <a href="pets.html" class="navbar-link" data-nav-link>
                 <span>Pets</span>
                 <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
               </a>
             </li>
 
             <li>
-              <a href="contact.html" class="navbar-link" data-nav-link>
-                <span>Contact</span>
+             <a href="contact.html" class="navbar-link" data-nav-link>
+               <span>Contact</span>
                 <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
               </a>
-            </li>
-
+           </li>
+           
           </ul>
+          <ul class="navbar-logo">
+            <li>
+              <img src="./assets/images/logo.png" alt="" left="50%" >
+            </li>
+         </ul>
 
         </nav>
-
-        <div class="header-action"id="contact" style="background-image: url('./assets/images/service-map.png')">
-          
-        </div>
 
       </div>
     </header>
@@ -138,7 +137,13 @@
             <label for="message">Message:</label>
             <textarea id="message" name="message" rows="5" required></textarea>
     
-            <button type="submit">Send Message</button>
+            <!--<button type="submit">Send Message</button>-->
+            <button id="openBtn">Send Message</button>
+                <div class="popup" id="popup" style="background-image: url('./assets/images/messege.png')">
+                  <span class="popup-close" onclick="closePopup()">&times;</span>
+                  
+                </div>
+                <div class="overlay" id="overlay" onclick="closePopup()"></div>
           </form>
       
           <section class="contact-info">
